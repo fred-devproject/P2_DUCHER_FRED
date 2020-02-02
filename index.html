@@ -3,89 +3,71 @@
 <html lang="fr">
 	<head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title>CV Frederic Ducher</title>
-        <!-- Bootstrap CSS -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    	<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<!--kit code font awesome-->
 		<script src="https://kit.fontawesome.com/8f60b265e2.js" crossorigin="anonymous"></script>
 	</head>
 
     <body class="page">
     	<!--header-->
-        <header>
-        	<div class="container">
-  				<div class="row">
-    				<div class="col-sm-4">
-        				<div class="photo">
-						<div class="rond"><img class="portrait" src="images/portrait2.jpg" alt="photo"></div>
-        				</div>
-        			</div>
-        			<div class="col-sm-8">
-        				<div class="title">
-        					<H1><span class="yellow">FREDERIC</span> DUCHER</H1><H3><u>Develo</u>ppeur web freelance</H3>
-        				</div>
-        			</div>
-				</div>
-			<!--fermeture container-->
-        	</div>
+        <header class="page__mainhead">
+  				<div class="page__mainhead__photo">
+				<div class="rond"><img class="portrait" src="images/portrait2.jpg" alt="photo"></div>
+        		</div>
+        		<div class="page__mainhead__title">
+        		<H1><span class="yellow">FREDERIC</span> DUCHER</H1><H3><u>Develo</u>ppeur web freelance</H3>
+        		</div>
+		<!--fermeture container-->
         </header>
 
         <!--corp de page-->
-        <div class="container">
-  			<div class="row">
+        <div class="page__corpse">
   			<!--coté gauche-->
-    		<div class="col-sm-4">
-    			<aside class="leftside">
-
+    		<aside class="page__corpse__leftside">
 				<!--bloc 1 contact-->
-				<div class="leftside_leftblock">
+				<address class="leftside_leftblock">
 					<div class="leftside_lefttitle"><H3>CONTACT</H3></div>
 					<div class="leftside_leftbar">
 						<p>Adresse<br/>1 Rue des étoiles 73000 Onthemoon</p>
 						<p>Email<br/>fred.xxxxxxxxxx@gmail.com</p>
 						<p>Téléphone<br/>06.xx.xx.xx.xx</p>
 					</div>
-				</div>
+				</address>
 
 				<!--bloc 2 à propos-->
-				<div class="leftside_leftblock">
+				<article class="leftside_leftblock">
 					<div class="leftside_lefttitle"><H3>A PROPOS DE MOI</H3></div>
 					<div class="leftside_leftbar">
 						<p>En reconversion professionelle après plusieurs années dans le domaine des contrôles réglementaires et de la maintenance.
 						<br/>J'ai developpé de nouvelles compétences dans le domaine du digital pour réorienter ma carrière vers le métier de developpeur web.</p>
 					</div>
-					</div>
+				</article>
 
 				<!--bloc 3 Loisirs-->
 				<div class="leftside_leftblock">
 					<div class="leftside_lefttitle"><H3>LOISIRS</H3></div>
 					<div class="leftside_leftbar">
-					<p><i class="fas fa-running"></i><i class="fas fa-gamepad"></i><i class="fas fa-tools"></i></p>
+					<div class="leftside__icon"></div><i class="fas fa-running"></i><i class="fas fa-gamepad"></i><i class="fas fa-tools"></i></div>
 				</div>
-				</div>
-
-				<!--fermeture barre gauche-->
-				</aside>
-			</div>
+			<!--fermeture barre gauche-->
+			</aside>
 
 			<!--coté droit-->
-			<div class="col-sm-8">
-				<section class="rightside">
+			<section class="page__corpse__rightside">
 						<!--section 4 formation-->
-						<div class="rightside_rightblock">
-							<div class="rightside_righttitle"><H2>FORMATION</H2></div>
+						<section class="rightside_rightblock">
+							<div class="rightside_righttitle"><i class="fas fa-graduation-cap"></i><H2>FORMATION</H2></div>
 							<ul>
 								<li>2020<H4 class="rightside_undertitle">OPENCLASSROOM</H4><p>Parcours developpeur web et Obtention du titre professionnel developpeur d'application</p></li>
 								<li>1995-1996<H4 class="rightside_undertitle">CFAI DE L'ERIER</H4><p>CAP et BEP maintenance des véhicules automobile en alternance</p></li>
 							</ul>
-						</div>
+						</section>
 
 						<!--section 5 Exp pro-->
-						<div class="rightside_rightblock">
-							<div class="rightside_righttitle"><H2>EXPERIENCE PROFESSIONNELLE</H2></div>
+						<section class="rightside_rightblock">
+							<div class="rightside_righttitle"><i class="fas fa-briefcase"></i><H2>EXPERIENCE PROFESSIONNELLE</H2></div>
 							<ul>
 								<li>2018 à 2020<h4>APAVE Sud-Europe</h4>Réalisation de vérification périodique et assistance technique à la mise en service d'équipement de levage de toute capacités.
 									  Vérification d'équipements scéniques et de salles de spectacles selon les préconisations du SYNPASE.
@@ -100,18 +82,14 @@
 									  Réalisation de devis.
 								</li>
 								<li>1998 à 2000<h4>Divers</h4>Diverses missions intérim dans le domaine de la maintenance, l'industrie et le BTP.</li>
-						</div>
-
+						</section>
 						<!--section 6 Recommandations-->
-						<div class="rightside_rightblock">
-							<div class="rightside_righttitle"><H2>RECOMMANDATIONS</H2></div>
-						</div>
-				<!--fermeture section droite-->		
-				</section>
-			</div>
+						<section class="rightside_rightblock">
+							<div class="rightside_righttitle"><i class="fas fa-pencil-alt"></i><H2>RECOMMANDATIONS</H2></div>
+						</section>
+			<!--fermeture section droite-->		
+			</section>
 		</div>
 		<!--fermeture container-->
-        </div>
-
-    </body>
+	</body>
     </html>

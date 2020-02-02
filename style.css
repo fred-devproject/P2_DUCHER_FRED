@@ -1,84 +1,43 @@
-/*Feuille de style CV DUCHER FRED*/
+/* feuille de style CV_DUCHER_FRED */
 
+
+/* Police */
 .page
 {
-	font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
-	font-size: 1rem;
-}
-.photo
-{
-	background-color: #FFD54F;
-	display:flex;
-	justify-content: space-around;
-}
-.rond
-{
-	display: inline-block;
-	border: 2px solid #FFD54F;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-bottom: 10%;
-	margin-top: 10%;
-	
-}
-.portrait
-{
-	width: inherit;
-	height: inherit;
-	border-radius: inherit;
-	object-fit: cover;
-  	object-position: right center;
-}
-.title
-{
-	padding-top: 15px;
-}
-.leftside
-{
-	background-color:#FFD54F;
-	color:#37474F; 
-}
-.leftside_lefttitle
-{
-	background-color: #37474F;
-	color: #FFD54F;
-	text-align: center;
-}
-.leftside_leftbar
-{
-	padding: 10%;
-}
-.rightside
-{
-	color:#37474F;
-}
-.rightside_righttitle
-{
-	color:#212121;
-	font-weight:bolder;
-}
-.rightside_undertitle
-{
-	display: inline;
-}
-.yellow
-{
-	color:#FFD54F; 
-}
-u
-{
-	text-decoration-color:#FFD54F;  
-}
-i
-{
-color: #37474F;
-}
-i.fas
-{
-	font-size: 40px;
-	display: inline-block;
-	margin: 25px;
+	font-family: 'Roboto', sans-serif;
+	max-width: 980px;
+	margin:auto;
 }
 
+/* Style Header */
+.page__mainhead
+{
+	display:grid;
+	grid-template-columns: 33% 66%;
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+.page__mainhead__photo
+{
+	grid-column: 1 / 2;
+	grid-row: 1;
+	background-color: #FDD835;
+}
+.page__mainhead__title
+{
+	grid-column: 2 / 3;
+	grid-row: 1;
+}
+/* Corp de page */
+.page__corpse
+{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+.page__corpse__leftside
+{
+	grid-column: 1 / 2;
+	background-color: #FDD835;
+}
