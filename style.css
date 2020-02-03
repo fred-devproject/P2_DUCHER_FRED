@@ -1,43 +1,84 @@
 /* feuille de style CV_DUCHER_FRED */
 
 
-/* Police */
-.page
+/* Style général */
+body
 {
 	font-family: 'Roboto', sans-serif;
-	max-width: 980px;
+	font-size: medium;
+	color:#37474F ;
+	width: 1280px;
 	margin:auto;
+}
+h1
+{
+	font-size: 3em;
 }
 
 /* Style Header */
-.page__mainhead
+.mainhead
 {
 	display:grid;
 	grid-template-columns: 33% 66%;
 	grid-gap: 10px;
 	grid-auto-rows: minmax(100px, auto);
 }
-.page__mainhead__photo
+.mainhead__photo
 {
 	grid-column: 1 / 2;
 	grid-row: 1;
 	background-color: #FDD835;
+	display:flex;
+	justify-content: space-around;
 }
-.page__mainhead__title
+.mainhead__photo__portrait
+{
+	width:250px;
+   clip-path:ellipse(50% 50%);
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+.mainhead__title
 {
 	grid-column: 2 / 3;
 	grid-row: 1;
+	display: flex;
 }
-/* Corp de page */
-.page__corpse
+.mainhead__title__name
+{
+	justify-content: flex-start;
+}
+.mainhead__title__yellow
+{
+	color:#FDD835;
+}
+.mainhead__title__light
+{
+	color:black;
+	font-weight: 50;
+}
+u
+{
+	text-decoration-color: #FDD835;
+}
+
+/* Style Corp de page */
+.corpse
 {
 	display: grid;
-	grid-template-columns: 33% 33% 33%;
+	grid-template-columns: 33% 66%;
 	grid-gap: 10px;
 	grid-auto-rows: minmax(100px, auto);
 }
-.page__corpse__leftside
+.corpse__leftside
 {
 	grid-column: 1 / 2;
 	background-color: #FDD835;
 }
+.leftside__lefttitle
+{
+	background-color: #37474F;
+	color: #FDD835;
+	text-align: center;
+}
+
