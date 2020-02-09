@@ -2,74 +2,78 @@
 
 .page
 {
-	font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
-	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
 }
-.photo
+h1
 {
-	background-color: #FFD54F;
+	color: black;
+}
+
+/* Header */
+
+.mainhead__photo
+{
+	background-color: #FDD835;
 	display:flex;
 	justify-content: space-around;
+	height: 100%;
 }
-.rond
+.mainhead__photo__portrait
 {
-	display: inline-block;
-	border: 2px solid #FFD54F;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-bottom: 10%;
-	margin-top: 10%;
-	
+   width:200px;
+   clip-path:ellipse(50% 50%);
+   margin-top: 25px;
+   margin-bottom: 25px;
 }
-.portrait
-{
-	width: inherit;
-	height: inherit;
-	border-radius: inherit;
-	object-fit: cover;
-  	object-position: right center;
-}
-.title
-{
-	padding-top: 15px;
-}
-.leftside
-{
-	background-color:#FFD54F;
-	color:#37474F; 
-}
-.leftside_lefttitle
-{
-	background-color: #37474F;
-	color: #FFD54F;
-	text-align: center;
-}
-.leftside_leftbar
-{
-	padding: 10%;
-}
-.rightside
+.mainhead__title
 {
 	color:#37474F;
 }
-.rightside_righttitle
+.mainhead__title_box__yellow
 {
-	color:#212121;
-	font-weight:bolder;
-}
-.rightside_undertitle
-{
-	display: inline;
-}
-.yellow
-{
-	color:#FFD54F; 
+	color:#FDD835; 
 }
 u
 {
-	text-decoration-color:#FFD54F;  
+	text-decoration-color:#FDD835;  
+}
+
+/* Partie gauche */
+.left
+{
+	background-color:#FDD835;
+	color:#37474F;
+	height:100%;
+	display:flex; 
+	flex-direction:column;
+}
+.left__top
+{
+	flex-grow: 1;
+}
+.left__top__box__title
+{
+	background-color: #37474F;
+	color: #FDD835;
+	text-align: center;
+}
+.left__top__box__bar
+{
+	padding: 20px;
+}
+.left__bot__box__title
+{
+	background-color: #37474F;
+	color: #FDD835;
+	text-align: center;
+}
+@media (max-width:768px)
+{
+	.left__bot__box
+	{
+		display: none;
+	}
+
 }
 i
 {
@@ -79,6 +83,17 @@ i.fas
 {
 	font-size: 40px;
 	display: inline-block;
-	margin: 25px;
+	margin: 15px;
+}
+
+/* Partie droite */
+.right__box
+{
+	color:#37474F;
+}
+.right__box__title
+{
+	color: black;
+	border-bottom: solid 2px #FDD835 ;
 }
 
